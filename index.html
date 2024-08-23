@@ -1,88 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site Pessoal</title>
     <style>
-        body { color: #FFB02A, font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header, footer { background-color: #000000; color: #FFB02A; text-align: center; padding: 1em; }
-        nav a { color: #FFB02A; margin: 0 15px; text-decoration: none; }
-        .container { padding: 20px; }
+      body {
+        color: #FFB02A, font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header,
+      footer {
+        background-color: #000000;
+        color: #FFB02A;
+        text-align: center;
+        padding: 1em;
+      }
+
+      nav a {
+        color: #FFB02A;
+        margin: 0 15px;
+        text-decoration: none;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
     </style>
-</head>
-<body>
+  </head>
+
+  <body>
     <header>
-        <h1>Bem-vindo ao Meu Site</h1>
-        <nav>
-            <a href="#sobre">Sobre Mim</a>
-            <a href="#experiencia">Experiência</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#idiomas">Idiomas</a>
-            <a href="#contato">Contato</a>
-        </nav>
+      <h1 id="welcome">Bem-vindo ao Meu Site</h1>
+      <nav>
+        <a id="about_me" href="#sobre">Sobre Mima</a>
+        <a id="expe_me" href="#experiencia">Experiência</a>
+        <a id="portifolio_me" href="#projetos">Projetos</a>
+        <a id="languages_me" href="#idiomas">Idiomas</a>
+        <a id="contact_me" href="#contato">Contato</a>
+        <button id="translate" onclick="mudarConteudo()">Translate to english</button>
+      </nav>
     </header>
     <div class="container">
-        <section id="sobre">
-            <h1>Sobre Mim</h1>
-            <p>Estudante de ciências da computação com experiência em pesquisa 
-                (simulação e análise de modelos para o planejamento de rotas em cidades inteligentes) 
-                por 1 ano e meio e auxiliar de TI por 6 meses. Tenho experiência com: 
-                Java | Python | C | VM | Sumo | Veins | Omnet++ | SQL | Git | AWs | Mendix
-            </p>
-        </section>
-        <section id="experiencia">
-            <h1>Experiência</h1>
-            <ul>
-                 <li><h4>Iniciação Científica</h4></li>
-                <ul>
-                    <li>Pesquisa e simulação de redes veiculares com 5G</li>
-                    <li>1 ano e meio de pesquisa</li>
-                </ul>
-                <li><h4>Suporte Técnico</h4></li>
-                <ul>
-                    <li>Estágio na SEJUC fornecendo suporte técnico e conserto de computadores</li>
-                    <li>Monitoramento de redes</li>
-                    <li>6 meses de estágio</li>
-                </ul>
-                <li><h4>Eságio Mendix</h4></li>
-                <ul>
-                    <li>Estágio como desenvolvedor mendix na USERH</li>
-                    <li>Desenvolvimento em low-code de sistemas diversos</li>
-                    <li>Desde agosto/2023</li>
-                </ul>
-            </ul>
-        </section>
-        <section id="projetos">
-            <h1>Projetos</h1>
-            <ul>
-                <li>Cozinha Virtual:
-                Rede social para apaixonados pela culinária</li>
-                <li>Jogo 2D:
-                Jogo de pular e desviar de obstáculos</li>
-            </ul>
-            </p>
-        </section>
-        <section id="idiomas">
-            <h1>Idiomas</h1>
-            <ul>
-                <li>Português fluente</li>
-                <li>Inglês fluente</li>
-                <li>Espanhol básico</li>
-                <li>Francês básico</li>
-            </ul>
-        </section>
-        <section id="contato">
-            
-            <h1>Contato</h1>
-            <p>Telefone: (79) 98154-6130<br>
-                Email: gabrielgattie@gmail.com<br>
-                <a href="https://github.com/attieGabriel" target="_blank">Github: attieGabriel</a>
-            </p>
-        </section>
+      <section id="sobre">
+        <h1 id="about">Sobre Mim</h1>
+
+        <p id="about_text">Estudante de ciências da computação com experiência em pesquisa
+          (simulação e análise de modelos para o planejamento de rotas em cidades inteligentes)
+          por 1 ano e meio e auxiliar de TI por 6 meses. Tenho experiência com:
+          Java | Python | C | VM | Sumo | Veins | Omnet++ | SQL | Git | AWs | Mendix
+        </p>
+      </section>
+      <section id="experiencia">
+        <h1 id="expe">Experiência</h1>
+        <ul>
+          <li>
+            <h4 id="initiation">Iniciação Científica</h4>
+          </li>
+          <ul>
+            <li id="initiation_1">Pesquisa e simulação de redes veiculares com 5G</li>
+            <li id="initiation_2">1 ano e meio de pesquisa</li>
+          </ul>
+          <li>
+            <h4 id="support">Suporte Técnico</h4>
+          </li>
+          <ul>
+            <li id="support_1">Estágio na SEJUC fornecendo suporte técnico e conserto de computadores</li>
+            <li id="support_2">Monitoramento de redes</li>
+            <li id="support_3">6 meses de estágio</li>
+          </ul>
+          <li>
+            <h4 id="intern">Estágio Mendix</h4>
+          </li>
+          <ul>
+            <li id="intern_1">Estágio como desenvolvedor mendix na USERH</li>
+            <li id="intern_2">Desenvolvimento em low-code de sistemas diversos</li>
+            <li id="intern_3">Desde agosto/2023</li>
+          </ul>
+        </ul>
+      </section>
+      <section id="projetos">
+        <h1 id="portfolio">Projetos</h1>
+        <ul>
+          <li id="kitchen">Cozinha Virtual:
+            Rede social para apaixonados pela culinária</li>
+          <li id="2d">Jogo 2D:
+            Jogo de pular e desviar de obstáculos</li>
+        </ul>
+      </section>
+      <section id="idiomas">
+        <h1 id="language">Idiomas</h1>
+        <ul>
+          <li id="pt">Português fluente</li>
+          <li id="en">Inglês fluente</li>
+          <li id="es">Espanhol básico</li>
+          <li id="fr">Francês básico</li>
+        </ul>
+      </section>
+      <section id="contato">
+
+        <h1 id="contact">Contato</h1>
+        <p id="phone">Telefone: (79) 98154-6130<br>
+          Email: gabrielgattie@gmail.com<br>
+          <a href="https://github.com/attieGabriel" target="_blank">Github: attieGabriel</a>
+        </p>
+      </section>
     </div>
     <footer>
-        <p>&copy; 2024 Gabriel Attie</p>
+      <p>&copy; 2024 Gabriel Attie</p>
     </footer>
-</body>
-</html>
