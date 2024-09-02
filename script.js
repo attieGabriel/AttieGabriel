@@ -14,7 +14,7 @@ function mudarConteudo() {
       document.getElementById("initiation_1").innerHTML = "Research and simulation of vehicular networks with 5G";
       document.getElementById("initiation_2").innerHTML = "1 year and a half of research";
       document.getElementById("support").innerHTML = "Technical support";
-      document.getElementById("support_1").innerHTML = "Internship at SEJUC providing technical support and computer repair";
+      document.getElementById("support_1").innerHTML = "Internship at SEJUC(Secretaria de Estado da Justiça e de Defesa do Consumidor Sergipe) providing technical support and computer repair";
       document.getElementById("support_2").innerHTML = "Network monitoring";
       document.getElementById("support_3").innerHTML = "6 months internship";
       document.getElementById("intern").innerHTML = "Mendix Internship";
@@ -47,7 +47,7 @@ function mudarConteudo() {
       document.getElementById("initiation_1").innerHTML = "Pesquisa e simulação de redes veiculares com 5G";
       document.getElementById("initiation_2").innerHTML = "1 ano e meio de pesquisa";
       document.getElementById("support").innerHTML = "Suporte Técnico";
-      document.getElementById("support_1").innerHTML = "Estágio na SEJUC fornecendo suporte técnico e conserto de computadores";
+      document.getElementById("support_1").innerHTML = "Estágio na SEJUC(Secretaria de Estado da Justiça e de Defesa do Consumidor Sergipe) fornecendo suporte técnico e conserto de computadores";
       document.getElementById("support_2").innerHTML = "Monitoramento de redes";
       document.getElementById("support_3").innerHTML = "6 meses de estágio";
       document.getElementById("intern").innerHTML = "Estágio Mendix";
