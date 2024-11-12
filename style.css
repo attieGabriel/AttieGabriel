@@ -7,3 +7,28 @@ button {
     font-size: 14px;
     font-family: Arial, sans-serif;
   }
+  body {
+    color: #FFB02A,;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #000000;
+    color: #FFB02A;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  nav a {
+    color: #FFB02A;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .container {
+    padding: 20px;
+    background-color: white;
+  }
+  

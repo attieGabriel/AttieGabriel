@@ -20,7 +20,7 @@ function mudarConteudo() {
       document.getElementById("intern").innerHTML = "Mendix Internship";
       document.getElementById("intern_1").innerHTML = "Internship as mendix developer at USERH";
       document.getElementById("intern_2").innerHTML = "Low-code development of multiple systems";
-      document.getElementById("intern_3").innerHTML = "Since August/2023";
+      document.getElementById("intern_3").innerHTML = "From August/2023 to November/2024";
       document.getElementById("portfolio").innerHTML = "Projects";
       document.getElementById("kitchen").innerHTML = "Cozinha Virtual: Social network for culinary lovers";
       document.getElementById("2d").innerHTML = "2D Game: Jumping and avoiding obstacles game";
@@ -30,7 +30,7 @@ function mudarConteudo() {
       document.getElementById("es").innerHTML = "Basic Spanish";
       document.getElementById("fr").innerHTML = "Basic French";
       document.getElementById("contact").innerHTML = "Contact";
-      document.getElementById("phone").innerHTML = "Telephone: : +55 (79) 98154-6130 <br >E-mail: gabrielgattie@gmail.com <br> <a href=https://github.com/attieGabriel target=_blank>Github: attieGabriel</a>";
+      document.getElementById("phone").innerHTML = "Telephone: : +55 (79) 98154-6130 <br >E-mail: gabrielgattie@gmail.com <br> <a href=https://github.com/attieGabriel target=_blank>Github: attieGabriel</a> <br> <a href=https://www.linkedin.com/in/gabriel-gomes-attie-9698101b1/ target=_blank>Linkedin: Gabriel Gomes Attie</a>";
     }
     else {
       document.getElementById("translate").innerHTML = "Translate to english";
@@ -53,7 +53,7 @@ function mudarConteudo() {
       document.getElementById("intern").innerHTML = "Estágio Mendix";
       document.getElementById("intern_1").innerHTML = "Estágio como desenvolvedor mendix na USERH";
       document.getElementById("intern_2").innerHTML = "Desenvolvimento em low-code de sistemas diversos";
-      document.getElementById("intern_3").innerHTML = "Desde agosto/2023";
+      document.getElementById("intern_3").innerHTML = "Agosto de 2023 até Novembro de 2024";
       document.getElementById("portfolio").innerHTML = "Projetos";
       document.getElementById("kitchen").innerHTML = "Cozinha Virtual: Rede social para apaixonados pela culinária";
       document.getElementById("2d").innerHTML = "Jogo 2D: Jogo de pular e desviar de obstáculos";
@@ -63,6 +63,6 @@ function mudarConteudo() {
       document.getElementById("es").innerHTML = "Espanhol básico";
       document.getElementById("fr").innerHTML = "Francês básico";
       document.getElementById("contact").innerHTML = "Contato";
-      document.getElementById("phone").innerHTML = "Telefone: (79) 98154-6130 <br>Email: gabrielgattie@gmail.com <br> <a href=https://github.com/attieGabriel target=_blank>Github: attieGabriel</a>";
+      document.getElementById("phone").innerHTML = "Telefone: (79) 98154-6130 <br>Email: gabrielgattie@gmail.com <br> <a href=https://github.com/attieGabriel target=_blank>Github: attieGabriel</a> <br> <a href=https://www.linkedin.com/in/gabriel-gomes-attie-9698101b1/ target=_blank>Linkedin: Gabriel Gomes Attie</a>";
     }
     }
