@@ -8,7 +8,7 @@ function mudarConteudo() {
       document.getElementById("languages_me").innerHTML = "Languages";
       document.getElementById("contact_me").innerHTML = "Contact";
       document.getElementById("about").innerHTML = "About me";
-      document.getElementById("about_text").innerHTML = "Computer science student with experience in research (simulation and analysis of models for route planning in smart cities) for 1 and a half years, IT assistant for 6 months and mendix developer since 2023. I have experience with: Java | Python | C | VM | Sumo | Veins | Omnet++ | SQL | Git | AWs | Mendix";
+      document.getElementById("about_text").innerHTML = "Computer science graduate with experience in research (simulation and analysis of models for route planning in smart cities) for 1 and a half years, IT assistant for 6 months and mendix developer since 2023. I have experience with: Java | Python | C | VM | Sumo | Veins | Omnet++ | SQL | Git | AWs | Mendix";
       document.getElementById("expe").innerHTML = "Experiences";
       document.getElementById("initiation").innerHTML = "Scientific initiation";
       document.getElementById("initiation_1").innerHTML = "Research and simulation of vehicular networks with 5G";
@@ -41,7 +41,7 @@ function mudarConteudo() {
       document.getElementById("languages_me").innerHTML = "Idiomas";
       document.getElementById("contact_me").innerHTML = "Contato";
       document.getElementById("about").innerHTML = "Sobre Mim";
-      document.getElementById("about_text").innerHTML = "Estudante de ciências da computação com experiência em pesquisa(simulação e análise de modelos para o planejamento de rotas em cidades inteligentes) por 1 ano e meio e auxiliar de TI por 6 meses. Tenho experiência com: Java | Python | C | VM | Sumo | Veins | Omnet++ | SQL | Git | AWs | Mendix";
+      document.getElementById("about_text").innerHTML = "Graduado em ciências da computação com experiência em pesquisa(simulação e análise de modelos para o planejamento de rotas em cidades inteligentes) por 1 ano e meio e auxiliar de TI por 6 meses. Tenho experiência com: Java | Python | C | VM | Sumo | Veins | Omnet++ | SQL | Git | AWs | Mendix";
       document.getElementById("expe").innerHTML = "Experiência";
       document.getElementById("initiation").innerHTML = "Iniciação Científica";
       document.getElementById("initiation_1").innerHTML = "Pesquisa e simulação de redes veiculares com 5G";
