@@ -29,6 +29,10 @@ function mudarConteudo() {
       document.getElementById("en").innerHTML = "Fluent English";
       document.getElementById("es").innerHTML = "Basic Spanish";
       document.getElementById("fr").innerHTML = "Basic French";
+      document.getElementById("download").innerHTML = "My certificates";
+      document.getElementById("certificados").innerHTML = "Certificates";
+      document.getElementById("download_certificados").innerHTML = "Click the button below to download the certificates";
+      document.getElementById("cert").innerHTML = "Download Certificates";
       document.getElementById("contact").innerHTML = "Contact";
       document.getElementById("phone").innerHTML = "Telephone: : +55 (79) 98154-6130 <br >E-mail: gabrielgattie@gmail.com <br> <a href=https://github.com/attieGabriel target=_blank>Github: attieGabriel</a> <br> <a href=https://www.linkedin.com/in/gabriel-gomes-attie-9698101b1/ target=_blank>Linkedin: Gabriel Gomes Attie</a>";
     }
@@ -62,6 +66,10 @@ function mudarConteudo() {
       document.getElementById("en").innerHTML = "Inglês fluente";
       document.getElementById("es").innerHTML = "Espanhol básico";
       document.getElementById("fr").innerHTML = "Francês básico";
+      document.getElementById("download").innerHTML = "Meus certificados ";
+      document.getElementById("certificados").innerHTML = "Certificados";
+      document.getElementById("download_certificados").innerHTML = "Clique no botão abaixo para baixar os certificados";
+      document.getElementById("cert").innerHTML = "Baixar Certificados";
       document.getElementById("contact").innerHTML = "Contato";
       document.getElementById("phone").innerHTML = "Telefone: (79) 98154-6130 <br>Email: gabrielgattie@gmail.com <br> <a href=https://github.com/attieGabriel target=_blank>Github: attieGabriel</a> <br> <a href=https://www.linkedin.com/in/gabriel-gomes-attie-9698101b1/ target=_blank>Linkedin: Gabriel Gomes Attie</a>";
     }
