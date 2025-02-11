@@ -1,4 +1,5 @@
 function mudarConteudo() {
+    const element2d = document.querySelector('[data-id="2d"]');
     if( document.getElementById("translate").innerHTML == "Translate to english"){
       document.getElementById("translate").innerHTML = "Traduza para portugues";
       document.getElementById("welcome").innerHTML = "Welcome to my website";
@@ -23,7 +24,12 @@ function mudarConteudo() {
       document.getElementById("intern_2").innerHTML = "Low-code development of web and mobile systems";
       document.getElementById("intern_3").innerHTML = "From August/2023 to November/2024";
       document.getElementById("portfolio").innerHTML = "Projects";
-      document.getElementById("projet").innerHTML = "<a href=https://landing-cozinha-virtual.vercel.app/ target=_blank>Cozinha Virtual</a>: Social network for culinary lovers <br> <a href=https://editor.p5js.org/gabrielgattie/full/oG3QlG-D9 target=_blank>2D Game</a>: Jumping and avoiding obstacles game <br> TCC: Application that monitors the behavioral biometrics of a user and determines if it is the owner of the cell phone that is using it or not";
+      document.getElementById("kitchen").innerHTML = "Cozinha Virtual: Social network for culinary lovers";
+      if (element2d) {
+        element2d.id = 'novoId';
+        element2d.querySelector('a').innerHTML = "2D Game: Jumping and avoiding obstacles game";
+      }
+      document.getElementById("tcc").innerHTML = "TCC: Application that monitors the behavioral biometrics of a user and determines if it is the owner of the cell phone that is using it or not";
       document.getElementById("language").innerHTML = "Languages";
       document.getElementById("pt").innerHTML = "Fluent Portuguese";
       document.getElementById("en").innerHTML = "Fluent English";
@@ -60,7 +66,9 @@ function mudarConteudo() {
       document.getElementById("intern_2").innerHTML = "Desenvolvimento em low-code de web e mobile";
       document.getElementById("intern_3").innerHTML = "Agosto de 2023 até Novembro de 2024";
       document.getElementById("portfolio").innerHTML = "Projetos";
-      document.getElementById("projet").innerHTML = "<a href=https://landing-cozinha-virtual.vercel.app/ target=_blank>Cozinha Virtual</a>: Rede social para apaixonados pela culinária <br> <a href=https://editor.p5js.org/gabrielgattie/full/oG3QlG-D9 target=_blank>Jogo 2D</a>: Jogo de pular e desviar de obstáculos <br> TCC: Aplicativo que monitora a biometria comportamental de um usuário e determina se é o dono do celular que o esta utilizando ou não";
+      document.getElementById("kitchen").innerHTML = "Cozinha Virtual: Rede social para apaixonados pela culinária";
+      document.getElementById("2d").innerHTML = "Jogo 2D: Jogo de pular e desviar de obstáculos";
+      document.getElementById("tcc").innerHTML = "TCC: Aplicativo que monitora a biometria comportamental de um usuário e determina se é o dono do celular que o esta utilizando ou não";
       document.getElementById("language").innerHTML = "Idiomas";
       document.getElementById("pt").innerHTML = "Português fluente";
       document.getElementById("en").innerHTML = "Inglês fluente";
