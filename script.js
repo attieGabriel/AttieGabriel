@@ -1,5 +1,4 @@
 function mudarConteudo() {
-    const element2d = document.querySelector('[data-id="2d"]');
     if( document.getElementById("translate").innerHTML == "Translate to english"){
       document.getElementById("translate").innerHTML = "Traduza para portugues";
       document.getElementById("welcome").innerHTML = "Welcome to my website";
@@ -21,14 +20,11 @@ function mudarConteudo() {
       document.getElementById("support_3").innerHTML = "6 months internship";
       document.getElementById("intern").innerHTML = "Mendix Internship";
       document.getElementById("intern_1").innerHTML = "Internship as mendix developer at USERH";
-      document.getElementById("intern_2").innerHTML = "Low-code development of web and mobile systems";
+      document.getElementById("intern_2").innerHTML = "Low-code development of multiple systems";
       document.getElementById("intern_3").innerHTML = "From August/2023 to November/2024";
       document.getElementById("portfolio").innerHTML = "Projects";
       document.getElementById("kitchen").innerHTML = "Cozinha Virtual: Social network for culinary lovers";
-      if (element2d) {
-        element2d.id = 'novoId';
-        element2d.querySelector('a').innerHTML = "2D Game: Jumping and avoiding obstacles game";
-      }
+      document.getElementById("2d").innerHTML = "2D Game: Jumping and avoiding obstacles game";
       document.getElementById("tcc").innerHTML = "TCC: Application that monitors the behavioral biometrics of a user and determines if it is the owner of the cell phone that is using it or not";
       document.getElementById("language").innerHTML = "Languages";
       document.getElementById("pt").innerHTML = "Fluent Portuguese";
@@ -56,14 +52,14 @@ function mudarConteudo() {
       document.getElementById("initiation").innerHTML = "Iniciação Científica";
       document.getElementById("initiation_1").innerHTML = "Pesquisa e simulação de redes veiculares com 5G";
       document.getElementById("initiation_2").innerHTML = "1 ano e meio de pesquisa";
-      document.getElementById("initiation_3").innerHTML = "Apresentação no 31º encontro de iniciação científica - EIC da UFS ";
+      document.getElementById("initiation_3").innerHTML = "Apresentação no 31º encontro de iniciação científica - EIC da UFS";
       document.getElementById("support").innerHTML = "Suporte Técnico";
       document.getElementById("support_1").innerHTML = "Estágio na SEJUC(Secretaria de Estado da Justiça e de Defesa do Consumidor Sergipe) fornecendo suporte técnico e conserto de computadores";
       document.getElementById("support_2").innerHTML = "Monitoramento de redes";
       document.getElementById("support_3").innerHTML = "6 meses de estágio";
       document.getElementById("intern").innerHTML = "Estágio Mendix";
       document.getElementById("intern_1").innerHTML = "Estágio como desenvolvedor mendix na USERH";
-      document.getElementById("intern_2").innerHTML = "Desenvolvimento em low-code de web e mobile";
+      document.getElementById("intern_2").innerHTML = "Desenvolvimento em low-code de sistemas diversos";
       document.getElementById("intern_3").innerHTML = "Agosto de 2023 até Novembro de 2024";
       document.getElementById("portfolio").innerHTML = "Projetos";
       document.getElementById("kitchen").innerHTML = "Cozinha Virtual: Rede social para apaixonados pela culinária";
