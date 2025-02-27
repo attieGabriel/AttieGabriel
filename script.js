@@ -45,8 +45,6 @@ function mudarConteudo() {
   document.getElementById("certificados").innerHTML = isEnglish ? "Available Certificates" : "Certificados Disponíveis";
   document.getElementById("download_certificados").innerHTML = isEnglish ? "Click the button below to download the certificates:" : "Clique no botão abaixo para baixar os certificados:";
   document.getElementById("cert").innerHTML = isEnglish ? "Download Certificates" : "Baixar Certificados";
-  document.getElementById("contact").innerHTML = isEnglish ? "Contact" : "Contato";
-  document.getElementById("phone").innerHTML = isEnglish ? "Phone: +55 (79) 98154-6130<br>Email: gabrielgattie@gmail.com<br><a href='https://github.com/attieGabriel' target='_blank'>Github: attieGabriel</a><br><a href='https://www.linkedin.com/in/gabriel-gomes-attie-9698101b1/' target='_blank'>LinkedIn: Gabriel Gomes Attie</a>" : "Telefone: (79) 98154-6130<br>Email: gabrielgattie@gmail.com<br><a href='https://github.com/attieGabriel' target='_blank'>Github: attieGabriel</a><br><a href='https://www.linkedin.com/in/gabriel-gomes-attie-9698101b1/' target='_blank'>LinkedIn: Gabriel Gomes Attie";
 }
 document.addEventListener('DOMContentLoaded', function() {
   showSection('sobre'); // Mostra a seção "Sobre Mim" por padrão

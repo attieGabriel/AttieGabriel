@@ -92,7 +92,10 @@ footer {
   align-items: center;
 }
 
-/* Estilo para o botão de tradução com bordas arredondadas */
 #translate {
+  border-radius: 15px;
+}
+
+#cert{
   border-radius: 15px;
 }
