@@ -44,8 +44,7 @@ function mudarConteudo() {
   document.getElementById("fr").innerHTML = isEnglish ? "Basic French" : "Francês básico";
   document.getElementById("certificados").innerHTML = isEnglish ? "Available Certificates" : "Certificados Disponíveis";
   document.getElementById("download_certificados").innerHTML = isEnglish ? "Click the button below to download the certificates:" : "Clique no botão abaixo para baixar os certificados:";
-  document.getElementById("cert").innerHTML = isEnglish ? "Download Certificates" : "Baixar Certificados";
 }
 document.addEventListener('DOMContentLoaded', function() {
-  showSection('sobre'); // Mostra a seção "Sobre Mim" por padrão
+  showSection('projetos'); // Mostra a seção "Sobre Mim" por padrão
 });
