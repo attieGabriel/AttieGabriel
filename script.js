@@ -35,8 +35,17 @@ function mudarConteudo() {
   document.getElementById("intern_3").innerHTML = isEnglish ? "August 2023 to November 2024" : "Agosto de 2023 até Novembro de 2024";
   document.getElementById("portfolio").innerHTML = isEnglish ? "Projects" : "Projetos";
   document.getElementById("kitchen").innerHTML = isEnglish ? "Virtual Kitchen: Social network for culinary lovers" : "Cozinha Virtual: Rede social para apaixonados pela culinária";
+  document.getElementById("kitchen_tecs").innerHTML = isEnglish ? "Most used technologies" : "Tecnologias mais utlizadas";
   document.getElementById("2d").innerHTML = isEnglish ? "2D Game: Jumping and dodging obstacles game" : "Jogo 2D: Jogo de pular e desviar de obstáculos";
+  document.getElementById("2d_tecs").innerHTML = isEnglish ? "Most used technologies" : "Tecnologias mais utlizadas";
   document.getElementById("tcc").innerHTML = isEnglish ? "TCC: Application that monitors the behavioral biometrics of a user and determines if it is the owner of the cell phone using it or not" : "TCC: Aplicativo que monitora a biometria comportamental de um usuário e determina se é o dono do celular que o está utilizando ou não";
+  document.getElementById("tcc_tecs").innerHTML = isEnglish ? "Most used technologies" : "Tecnologias mais utlizadas";
+  document.getElementById("Crud").innerHTML = isEnglish ? "CRUD in python: crud made in python" : "CRUD em python: crud feito em python";
+  document.getElementById("Crud_tecs").innerHTML = isEnglish ? "Most used technologies" : "Tecnologias mais utlizadas";
+  document.getElementById("PLN_1").innerHTML = isEnglish ? "System for classifying texts" : "Sistema para classificar textos";
+  document.getElementById("PLN_1_tecs").innerHTML = isEnglish ? "Most used technologies" : "Tecnologias mais utlizadas";
+  document.getElementById("PLN_2").innerHTML = isEnglish ? "System for classifying which record has the most similarity to a specific key" : "Sistema para classificar qual registro tem mais similaridade com uma chave especifica";
+  document.getElementById("PLN_2_tecs").innerHTML = isEnglish ? "Most used technologies" : "Tecnologias mais utlizadas";
   document.getElementById("language").innerHTML = isEnglish ? "Languages" : "Idiomas";
   document.getElementById("pt").innerHTML = isEnglish ? "Fluent Portuguese" : "Português fluente";
   document.getElementById("en").innerHTML = isEnglish ? "Fluent English" : "Inglês fluente";
@@ -45,5 +54,5 @@ function mudarConteudo() {
   document.getElementById("certificados").innerHTML = isEnglish ? "Available Certificates" : "Certificados Disponíveis";
 }
 document.addEventListener('DOMContentLoaded', function() {
-  showSection('sobre'); // Mostra a seção "Sobre Mim" por padrão
+  showSection('projetos'); // Mostra a seção "Sobre Mim" por padrão
 });
