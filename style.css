@@ -7,30 +7,33 @@ header {
   width: 100%;
   background-color: #333;
   color: white;
-  padding: 1rem;
   text-align: center;
-  position: fixed; /* Torna o header fixo */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  height: 3rem;
+  padding: 1rem;
 }
 
 .container {
   display: flex;
   width: 100%;
-  margin-top: 4rem; /* Adiciona espaço para o header fixo */
+  margin-top: 7rem;
+  align-items: flex-start;
+  margin-left: 40px;
 }
 
 .sidebar {
   width: 20%;
   background-color: #f4f4f4;
   padding: 1rem;
-  height: calc(100vh - 4rem); /* Ajusta a altura da sidebar */
-  position: fixed;
+  height: calc(100vh - 3rem); /* Garante que a sidebar ocupe toda a altura disponível abaixo do header */
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  position: fixed; /* Faz a sidebar ficar fixa na tela */
+  left: 0;
+  top: 7rem; /* Começa logo abaixo do header */
 }
 
 .sidebar a, .sidebar button {
@@ -46,21 +49,13 @@ header {
 }
 
 main {
-  margin-left: 25%; /* Ajusta a margem para corresponder à largura da sidebar */
+  margin-left: 20%; /* Deixa espaço para a sidebar */
   padding: 1rem;
-  padding-top: 4rem; /* Adiciona espaço para o header fixo */
-  width: 75%; /* Ajusta a largura para corresponder à margem */
-  height: calc(100vh - 4rem); /* Ajusta a altura do main */
-  padding-bottom: 4rem;
+  width: 80%; /* Ajusta a largura do conteúdo */
+  padding-top: 0; /* Remova o padding-top para evitar espaço extra */
 }
-
 .content-section {
-  display: none;
-}
-
-.content-section.active {
-  margin-top : 1rem;
-  display: block;
+  display: block; /* Garante que todas as seções estejam visíveis */
 }
 
 footer {
@@ -68,10 +63,9 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  padding: 2rem;
+  margin-top: auto; /* Faz o footer ficar sempre no final da página */
+  position: relative; /* Remove o position: fixed para que ele não sobreponha o conteúdo */
 }
 
 .sidebar .icon-button {
