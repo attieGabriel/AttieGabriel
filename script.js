@@ -54,5 +54,5 @@ function mudarConteudo() {
   document.getElementById("certificados").innerHTML = isEnglish ? "Available Certificates" : "Certificados Disponíveis";
 }
 document.addEventListener('DOMContentLoaded', function() {
-  showSection('sobre'); // Mostra a seção "Sobre Mim" por padrão
+  showSection('projetos'); // Mostra a seção "Sobre Mim" por padrão
 });

@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  overflow: hidden; /* Remove a barra de rolagem da página */
 }
 
 header {
@@ -13,7 +14,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
-  height: 4rem;
+  height: 3rem;
 }
 
 .container {
@@ -29,7 +30,7 @@ header {
   height: calc(100vh - 4rem); /* Ajusta a altura da sidebar */
   position: fixed;
   top: 4rem; /* Posiciona a sidebar logo abaixo do header */
-  overflow-y: auto;
+  overflow-y: auto; /* Remove a barra de rolagem da sidebar */
   display: flex;
   flex-direction: column;
 }
@@ -47,18 +48,17 @@ header {
 }
 
 main {
-  margin-left: 25%;
+  margin-left: 25%; /* Ajusta a margem para corresponder à largura da sidebar */
   padding: 1rem;
   padding-top: 4rem; /* Adiciona espaço para o header fixo */
-  width: 75%;
+  width: 75%; /* Ajusta a largura para corresponder à margem */
   height: calc(100vh - 4rem); /* Ajusta a altura do main */
-  overflow-y: auto;
+  overflow-y: auto; /* Remove a barra de rolagem do main */
   padding-bottom: 4rem;
 }
 
 .content-section {
   display: none;
-  overflow-y: auto;
 }
 
 .content-section.active {
