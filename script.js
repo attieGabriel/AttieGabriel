@@ -33,8 +33,8 @@ function mudarConteudo() {
   document.getElementById("intern_1").innerHTML = isEnglish ? "Internship as a Mendix developer at USERH" : "Estágio como desenvolvedor mendix na USERH";
   document.getElementById("intern_2").innerHTML = isEnglish ? "Low-code development of various systems" : "Desenvolvimento em low-code de sistemas diversos";
   document.getElementById("intern_3").innerHTML = isEnglish ? "August 2023 to November 2024" : "Agosto de 2023 até Novembro de 2024";
-  document.getElementById("dev_junior").innerHTML = isEnglish ? "Junior developer and data analyst" : "Desenvolvedor e analista de dados Junior";
-  document.getElementById("dev_junior_1").innerHTML = isEnglish ? "Junior developer on the palantir foundry platform by Vf consultancy" : "Desenvolvedor junior na plataforma palantir foundry pela Vf consultancy";
+  document.getElementById("dev_junior").innerHTML = isEnglish ? "Junior developer and data analyst" : "Desenvolvedor e Analista de Dados Júnior";
+  document.getElementById("dev_junior_1").innerHTML = isEnglish ? "Junior developer on the palantir foundry platform by Vf consultancy" : "Desenvolvedor júnior na plataforma palantir foundry pela Vf consultancy";
   document.getElementById("dev_junior_2").innerHTML = isEnglish ? "Development of applications for data analysis" : "Desenvolvimento de aplicações para análise de dados";
   document.getElementById("dev_junior  _3").innerHTML = isEnglish ? "Since March 2025" : "Desde Março de 2025";
   document.getElementById("portfolio").innerHTML = isEnglish ? "Projects" : "Projetos";
