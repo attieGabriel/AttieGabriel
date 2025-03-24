@@ -46,6 +46,8 @@ function mudarConteudo() {
   document.getElementById("PLN_1_tecs").innerHTML = isEnglish ? "Most used technologies" : "Tecnologias mais utlizadas";
   document.getElementById("PLN_2").innerHTML = isEnglish ? "System for classifying which record has the most similarity to a specific key" : "Sistema para classificar qual registro tem mais similaridade com uma chave especifica";
   document.getElementById("PLN_2_tecs").innerHTML = isEnglish ? "Most used technologies" : "Tecnologias mais utlizadas";
+  document.getElementById("Futfacil").innerHTML = isEnglish ? "CRUD made in next.js to register football courts" : "CRUD feito em next.js para cadastro de quadras de futebol";
+  document.getElementById("Futfacil_tecs").innerHTML = isEnglish ? "Most used technologies" : "Tecnologias mais utlizadas";
   document.getElementById("language").innerHTML = isEnglish ? "Languages" : "Idiomas";
   document.getElementById("pt").innerHTML = isEnglish ? "Fluent Portuguese" : "Português fluente";
   document.getElementById("en").innerHTML = isEnglish ? "Fluent English" : "Inglês fluente";
