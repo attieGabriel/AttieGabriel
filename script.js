@@ -29,6 +29,7 @@ function mudarConteudo() {
   document.getElementById("es").innerHTML = isEnglish ? "Basic Spanish" : "Espanhol básico";
   document.getElementById("fr").innerHTML = isEnglish ? "Basic French" : "Francês básico";
   document.getElementById("certificados").innerHTML = isEnglish ? "Available Certificates" : "Certificados Disponíveis";
+  document.getElementById("certificados_text").innerHTML = isEnglish ? "Here are all my certificates available for download" : "Aqui estão todos os meus certificados disponíveis para download";
   document.getElementById("translate").innerHTML = isEnglish ? "Traduza para português" : "Translate to english";
   document.getElementById("welcome").innerHTML = isEnglish ? "Welcome to My Site" : "Bem-vindo ao Meu Site";
   document.getElementById("about_me").innerHTML = isEnglish ? "About Me" : "Sobre Mim";
