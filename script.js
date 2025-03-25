@@ -28,7 +28,7 @@ function mudarConteudo() {
   document.getElementById("en").innerHTML = isEnglish ? "Fluent English" : "Inglês fluente";
   document.getElementById("es").innerHTML = isEnglish ? "Basic Spanish" : "Espanhol básico";
   document.getElementById("fr").innerHTML = isEnglish ? "Basic French" : "Francês básico";
-  document.getElementById("certificados").innerHTML = isEnglish ? "Available Certificates" : "Certificados Disponíveis";
+  document.getElementById("certificates").innerHTML = isEnglish ? "Available Certificates" : "Certificados Disponíveis";
   document.getElementById("certificados_text").innerHTML = isEnglish ? "Here are all my certificates available for download" : "Aqui estão todos os meus certificados disponíveis para download";
   document.getElementById("translate").innerHTML = isEnglish ? "Traduza para português" : "Translate to english";
   document.getElementById("welcome").innerHTML = isEnglish ? "Welcome to My Site" : "Bem-vindo ao Meu Site";
@@ -36,7 +36,7 @@ function mudarConteudo() {
   document.getElementById("expe_me").innerHTML = isEnglish ? "Experience" : "Experiência";
   document.getElementById("portifolio_me").innerHTML = isEnglish ? "Projects" : "Projetos";
   document.getElementById("languages_me").innerHTML = isEnglish ? "Languages" : "Idiomas";
-  document.getElementById("download").innerHTML = isEnglish ? "My Certificates" : "Meus Certificados";
+  document.getElementById("cert_me").innerHTML = isEnglish ? "Available Certificates" : "Certificados Disponíveis";
   document.getElementById("about").innerHTML = isEnglish ? "About Me" : "Sobre Mim";
   document.getElementById("about_text").innerHTML = isEnglish ? 
     "Graduated in computer science from UFS (Federal University of Sergipe) with experience as a PIBIC student, IT support, web/mobile developer and currently as a developer and data analyst. I've worked with: Java | Python | Node.js | C | VM | Juice | Veins | Omnet++ | SQL | Git | AWS | Mendix | Foundry" : 
