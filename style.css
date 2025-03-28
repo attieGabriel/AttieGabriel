@@ -1,6 +1,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -18,22 +21,20 @@ header {
 .container {
   display: flex;
   width: 100%;
-  margin-top: 7rem;
-  align-items: flex-start;
-  margin-left: 40px;
+  margin-top: 7rem; /* Garante que o conteúdo não fique atrás do header */
 }
 
 .sidebar {
   width: 20%;
   background-color: #f4f4f4;
   padding: 1rem;
-  height: calc(100vh - 3rem); /* Garante que a sidebar ocupe toda a altura disponível abaixo do header */
+  height: calc(100vh - 7rem); /* Ajuste correto para compensar o header */
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  position: fixed; /* Faz a sidebar ficar fixa na tela */
+  position: fixed;
   left: 0;
-  top: 7rem; /* Começa logo abaixo do header */
+  top: 7rem;
 }
 
 .sidebar a, .sidebar button {
@@ -49,13 +50,15 @@ header {
 }
 
 main {
-  margin-left: 20%; /* Deixa espaço para a sidebar */
+  margin-left: calc(20% + 40px); /* Evita sobreposição da sidebar */
+  width: calc(80% - 40px); /* Ajusta a largura do conteúdo */
   padding: 1rem;
-  width: 80%; /* Ajusta a largura do conteúdo */
-  padding-top: 0; /* Remova o padding-top para evitar espaço extra */
+  padding-bottom: 5rem;
 }
+
 .content-section {
-  display: block; /* Garante que todas as seções estejam visíveis */
+  display: block;
+  scroll-margin-top: 8rem;
 }
 
 footer {
@@ -64,8 +67,7 @@ footer {
   color: white;
   text-align: center;
   padding: 0.2rem;
-  margin-top: auto; /* Faz o footer ficar sempre no final da página */
-  position: relative; /* Remove o position: fixed para que ele não sobreponha o conteúdo */
+  margin-top: auto; /* Mantém o footer no final */
 }
 
 .sidebar .icon-button {
