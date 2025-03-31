@@ -9,7 +9,6 @@ function showSection(sectionId) {
 function mudarConteudo(idioma) {
   const traducoes = {
     pt: {
-      translate: "Traduza para inglês",
       welcome: "Bem-vindo ao Meu Site",
       about_me: "Sobre Mim",
       expe_me: "Experiência",
@@ -59,7 +58,6 @@ function mudarConteudo(idioma) {
       certificados_text: "Aqui estão todos os meus certificados disponíveis para download",
     },
     en: {
-      translate: "Translate to Portuguese",
       welcome: "Welcome to My Site",
       about_me: "About Me",
       expe_me: "Experience",
@@ -109,7 +107,6 @@ function mudarConteudo(idioma) {
       certificados_text: "Here are all my certificates available for download",
     },
     es: {
-      translate: "Traducir al portugués",
       welcome: "Bienvenido a Mi Sitio",
       about_me: "Sobre Mí",
       expe_me: "Experiencia",
@@ -160,7 +157,6 @@ function mudarConteudo(idioma) {
     },
     fr: {
       welcome: "Bienvenue sur mon site",
-      translate: "Traduire en portugais",
       about_me: "À propos de moi",
       expe_me: "Expérience",
       portifolio_me: "Projets",
@@ -218,7 +214,6 @@ function mudarConteudo(idioma) {
   }
 
   // Atualiza os textos com base no idioma selecionado
-  document.getElementById("translate").innerHTML = traducoesSelecionadas.translate;
   document.getElementById("welcome").innerHTML = traducoesSelecionadas.welcome;
   document.getElementById("about_me").innerHTML = traducoesSelecionadas.about_me;
   document.getElementById("expe_me").innerHTML = traducoesSelecionadas.expe_me;
