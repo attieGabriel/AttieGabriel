@@ -213,7 +213,6 @@ function mudarConteudo(idioma) {
     return;
   }
 
-  // Atualiza os textos com base no idioma selecionado
   document.getElementById("welcome").innerHTML = traducoesSelecionadas.welcome;
   document.getElementById("about_me").innerHTML = traducoesSelecionadas.about_me;
   document.getElementById("expe_me").innerHTML = traducoesSelecionadas.expe_me;
