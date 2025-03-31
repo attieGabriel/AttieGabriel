@@ -265,13 +265,16 @@ function mudarConteudo(idioma) {
 
 document.addEventListener("DOMContentLoaded", function () {
   mudarConteudo("pt"); // Define o idioma padrão como português
-});
+  showSection("sobre"); // Mostra a seção "Sobre Mim" por padrão
 
-document.addEventListener('DOMContentLoaded', function() {
-  showSection('sobre'); // Mostra a seção "Sobre Mim" por padrão
+  // Garante que a sidebar comece colapsada
+  const sidebar = document.querySelector(".sidebar");
+  if (!sidebar.classList.contains("collapsed")) {
+    sidebar.classList.add("collapsed");
+  }
 });
 
 function toggleSidebar() {
-  const sidebar = document.querySelector('.sidebar');
-  sidebar.classList.toggle('collapsed');
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.toggle("collapsed");
 }

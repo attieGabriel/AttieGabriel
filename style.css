@@ -28,7 +28,6 @@ header {
   width: 20%; /* Largura padrão da sidebar */
   background-color: #f4f4f4;
   padding: 1rem;
-  height: calc(100vh - 7rem); /* Ajuste correto para compensar o header */
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -36,11 +35,13 @@ header {
   left: 0;
   top: 7rem;
   transition: width 0.3s ease; /* Animação suave para recolher/expandir */
+  height: 100%;
 }
 
 .sidebar.collapsed {
   width: 50px; /* Largura da sidebar recolhida */
   padding: 0.5rem; /* Reduz o padding */
+  height: 100%;
 }
 
 .sidebar a, .sidebar button {
@@ -69,6 +70,17 @@ header {
   width: 100%; /* Garante que o botão ocupe toda a largura */
 }
 
+main {
+  margin-left: 25%; /* Margem padrão para corresponder à largura da sidebar */
+  width: 100%; /* Largura padrão do conteúdo */
+  transition: margin-left 0.3s ease, width 0.3s ease; /* Animação suave para ajuste */
+}
+
+.sidebar.collapsed + main {
+  margin-left: 90px; /* Ajusta a margem quando a sidebar está recolhida */
+  width: 100%; /* Ajusta a largura do conteúdo */
+}
+
 .translate-buttons {
   display: flex; /* Alinha os botões lado a lado */
   gap: 10px; /* Adiciona espaçamento entre os botões */
@@ -87,11 +99,6 @@ header {
   display: block;
   width: 20px; /* Ajusta o tamanho das bandeiras */
   height: auto;
-}
-
-main {
-  margin-left: calc(20% + 40px); /* Evita sobreposição da sidebar */
-  width: calc(80% - 40px); /* Ajusta a largura do conteúdo */
 }
 
 .content-section {
