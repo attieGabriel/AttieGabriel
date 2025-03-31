@@ -72,8 +72,6 @@ header {
 main {
   margin-left: calc(20% + 40px); /* Evita sobreposição da sidebar */
   width: calc(80% - 40px); /* Ajusta a largura do conteúdo */
-  padding: 1rem;
-  padding-bottom: 5rem;
 }
 
 .content-section {
@@ -116,10 +114,6 @@ footer {
   align-items: center;
 }
 
-#translate {
-  border-radius: 15px;
-}
-
-#cert {
-  border-radius: 15px;
+#certificados {
+  padding-bottom: 1rem;
 }
