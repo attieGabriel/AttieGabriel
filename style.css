@@ -49,6 +49,26 @@ header {
   background-color: #ddd;
 }
 
+.translate-buttons {
+  display: flex; /* Alinha os botões lado a lado */
+  gap: 10px; /* Adiciona espaçamento entre os botões */
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  margin-top: 10px; /* Adiciona um pequeno espaçamento acima */
+}
+
+.translate-buttons button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.translate-buttons img {
+  display: block;
+  width: 20px; /* Ajusta o tamanho das bandeiras */
+  height: auto;
+}
+
 main {
   margin-left: calc(20% + 40px); /* Evita sobreposição da sidebar */
   width: calc(80% - 40px); /* Ajusta a largura do conteúdo */
