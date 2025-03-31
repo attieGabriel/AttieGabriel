@@ -158,7 +158,7 @@ function mudarConteudo(idioma) {
       certificates: "Certificados Disponibles",
       certificados_text: "Aquí están todos mis certificados disponibles para descargar",
     },
-    fr:{
+    fr: {
       welcome: "Bienvenue sur mon site",
       translate: "Traduire en portugais",
       about_me: "À propos de moi",
@@ -207,7 +207,7 @@ function mudarConteudo(idioma) {
       fr: "Français de base",
       certificates: "Certificats disponibles",
       certificados_text: "Voici tous mes certificats disponibles au téléchargement",
-    }
+    },
   };
 
   const traducoesSelecionadas = traducoes[idioma];
@@ -260,10 +260,10 @@ function mudarConteudo(idioma) {
   document.getElementById("Futfacil").innerHTML = traducoesSelecionadas.Futfacil;
   document.getElementById("Futfacil_tecs").innerHTML = traducoesSelecionadas.Futfacil_tecs;
   document.getElementById("language").innerHTML = traducoesSelecionadas.language;
-  document.getElementById("pt").innerHTML = traducoesSelecionadas.pt;
-  document.getElementById("en").innerHTML = traducoesSelecionadas.en;
-  document.getElementById("es").innerHTML = traducoesSelecionadas.es;
-  document.getElementById("fr").innerHTML = traducoesSelecionadas.fr;
+  document.getElementById("pot").innerHTML = traducoesSelecionadas.pt;
+  document.getElementById("eng").innerHTML = traducoesSelecionadas.en;
+  document.getElementById("esp").innerHTML = traducoesSelecionadas.es;
+  document.getElementById("fra").innerHTML = traducoesSelecionadas.fr;
   document.getElementById("certificates").innerHTML = traducoesSelecionadas.certificates;
   document.getElementById("certificados_text").innerHTML = traducoesSelecionadas.certificados_text;
 
