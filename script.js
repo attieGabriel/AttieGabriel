@@ -196,7 +196,7 @@ function mudarConteudo(idioma) {
       PLN_2_tecs: "Technologies les plus utilisées",
       Futfacil: "CRUD fait en next.js pour l'enregistrement des terrains de football",
       Futfacil_tecs: "Technologies les plus utilisées",
-      languages: "Langues",
+      language: "Langues",
       pt: "Portugais courant",
       en: "Anglais courant",
       es: "Espagnol de base",
