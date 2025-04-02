@@ -6,7 +6,7 @@
   <script src="script.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site Pessoal</title>
+  <title>Portifólio Gabriel Attie</title>
 </head>
 
 <body>
@@ -19,8 +19,16 @@
       <a id="about_me" href="#sobre">Sobre Mim</a>
       <a id="expe_me" href="#experiencia">Experiência</a>
       <a id="portifolio_me" href="#projetos">Projetos</a>
+      <a id="tecnologies_me" href="#tecnologies">Tecnologias</a>
       <a id="languages_me" href="#idiomas">Idiomas</a>
       <a id="cert_me" href="#certificados">Meus Certificados</a>
+      <label class="toggle-switch">
+        <input type="checkbox" id="toggle-button" onchange="toggleTheme()">
+        <span class="slider">
+          <span class="icon sun">☀️</span>
+          <span class="icon moon">🌙</span>
+        </span>
+      </label>
       <div class="translate-buttons">
         <button id="br" onclick="mudarConteudo('pt')"><img src="https://flagcdn.com/16x12/br.png" alt="Bandeira do Brasil" width="15"></button>
         <button id="us" onclick="mudarConteudo('en')"><img src="https://flagcdn.com/16x12/us.png" alt="Bandeira dos Estados Unidos" width="15"></button>
@@ -28,10 +36,10 @@
         <button id="fr" onclick="mudarConteudo('fr')"><img src="https://flagcdn.com/16x12/fr.png" alt="Bandeira da Franca" width="15"></button>
       </div>
       <div class="sidebar-buttons">
-        <a href="https://github.com/attieGabriel" target="_blank"><button class="icon-button"><img src="github-icon.png" alt="Github"></button></a>
-        <a href="https://www.linkedin.com/in/gabriel-gomes-attie-9698101b1/" target="_blank"><button class="icon-button"><img src="linkedin-icon.png" alt="LinkedIn"></button></a>
-        <a href="mailto:gabrielgattie@gmail.com"><button class="icon-button"><img src="email-icon.png" alt="Email"></button></a>
-        <a href="tel:+5579981546130"><button class="icon-button"><img src="phone-icon.png" alt="Telefone"></button></a>
+        <a href="https://github.com/attieGabriel" target="_blank"><button class="icon-button"><img src="img/github-icon.png" alt="Github"></button></a>
+        <a href="https://www.linkedin.com/in/gabriel-gomes-attie-9698101b1/" target="_blank"><button class="icon-button"><img src="img/linkedin-icon.png" alt="LinkedIn"></button></a>
+        <a href="mailto:gabrielgattie@gmail.com"><button class="icon-button"><img src="img/email-icon.png" alt="Email"></button></a>
+        <a href="tel:+5579981546130"><button class="icon-button"><img src="img/phone-icon.png" alt="Telefone"></button></a>
       </div>
     </nav>
     <main>
@@ -44,20 +52,12 @@
         <h1 id="expe">Experiência</h1>
         <ul>
           <li>
-            <h4 id="initiation">Iniciação Científica</h4>
+            <h4 id="dev_junior">Desenvolvedor e Analista de Dados Júnior</h4>
           </li>
           <ul>
-            <li id="initiation_1">Pesquisa e simulação de redes veiculares com 5G</li>
-            <li id="initiation_2">1 ano e meio de pesquisa</li>
-            <li id="initiation_3">Apresentação no 31º encontro de iniciação científica - EIC da UFS</li>
-          </ul>
-          <li>
-            <h4 id="support">Suporte Técnico</h4>
-          </li>
-          <ul>
-            <li id="support_1">Estágio na SEJUC(Secretaria de Estado da Justiça e de Defesa do Consumidor Sergipe) fornecendo suporte técnico e conserto de computadores</li>
-            <li id="support_2">Monitoramento de redes</li>
-            <li id="support_3">6 meses de estágio</li>
+            <li id="dev_junior_1">Desenvolvedor júnior na plataforma palantir foundry pela Vf consultancy</li>
+            <li id="dev_junior_2">Desenvolvimento de aplicações para análise de dados</li>
+            <li id="dev_junior_3">Desde Março de 2025</li>
           </ul>
           <li>
             <h4 id="intern">Estágio Mendix</h4>
@@ -68,12 +68,20 @@
             <li id="intern_3">Agosto de 2023 até Novembro de 2024</li>
           </ul>
           <li>
-            <h4 id="dev_junior">Desenvolvedor e Analista de Dados Júnior</h4>
+            <h4 id="support">Suporte Técnico</h4>
           </li>
           <ul>
-            <li id="dev_junior_1">Desenvolvedor júnior na plataforma palantir foundry pela Vf consultancy</li>
-            <li id="dev_junior_2">Desenvolvimento de aplicações para análise de dados</li>
-            <li id="dev_junior_3">Desde Março de 2025</li>
+            <li id="support_1">Estágio na SEJUC(Secretaria de Estado da Justiça e de Defesa do Consumidor Sergipe) fornecendo suporte técnico e conserto de computadores</li>
+            <li id="support_2">Monitoramento de redes</li>
+            <li id="support_3">6 meses de estágio</li>
+          </ul>
+          <li>
+            <h4 id="initiation">Iniciação Científica</h4>
+          </li>
+          <ul>
+            <li id="initiation_1">Pesquisa e simulação de redes veiculares com 5G</li>
+            <li id="initiation_2">1 ano e meio de pesquisa</li>
+            <li id="initiation_3">Apresentação no 31º encontro de iniciação científica - EIC da UFS</li>
           </ul>
         </ul>
       </section>
@@ -151,9 +159,8 @@
               <li id="PLN_2_tec_2">Machine Learning</li>
               <li id="PLN_2_tec_3">Hugging face</li>
               <li id="PLN_2_tec_4">Scikit-learn</li>
-              <li id="PLN_2_tec_5">Hnswlib</li>
-              <li id="PLN_2_tec_6">Pandas</li>
-              <li id="PLN_2_tec_7">Numpy</li>
+              <li id="PLN_2_tec_5">Pandas</li>
+              <li id="PLN_2_tec_6">Numpy</li>
             </ul>
             <li id="Link_PLN_2"><a href="https://github.com/attieGabriel/PLN_2024_Attie_Gabriel" target="_blank">https://github.com/attieGabriel/PLN_2024_Attie_Gabriel</a></li>
           </ul>
@@ -167,11 +174,73 @@
               <li id="Futfacil_tec_4">Sequelize</li>
               <li id="Futfacil_tec_5">Node.js</li>
               <li id="Futfacil_tec_6">CSS</li>
-              
             </ul>
             <li id="Link_PLN_2"><a href="https://github.com/attieGabriel/futfacil" target="_blank">https://github.com/attieGabriel/futfacil</a></li>
           </ul>
           </ul>
+      </section>
+      <section id="tecnologias" class="content-section">
+        <h1 id="tecnologie">Tecnologias</h1>
+        <ul>
+          <li id="back">Back-End</li>
+          <ul>
+            <li id="node">Nodejs  <img src="img/nodejs.png" height="22" width="22"></li>
+            <li id="java">Java  <img src="img/java.png" height="22" width="22"></li>
+            <li id="python">Python  <img src="img/python.png" height="22" width="22"></li>
+            <li id="next">Nextjs  <img src="img/nextjs.png" height="22" width="22"></li>
+            <li id="c">C  <img src="img/C.png" height="22" width="22"></li>
+          </ul>
+          <li id="data">Banco de dados</li>
+          <ul>
+            <li id="post">PostgreSQL  <img src="img/postgres.png" height="22" width="22"></li>
+            <li id="my">MySQL  <img src="img/MySQL.png" height="22" width="44"></li>
+            <li id="mongo">MongoDB  <img src="img/mongoDB.png" height="22" width="66"></li>
+          </ul>
+          <li id="front">Front-End</li>
+          <ul>
+            <li id="css">CSS  <img src="img/css.png" height="22" width="22"></li>
+            <li id="html">HTML  <img src="img/html.png" height="22" width="22"></li>
+            <li id="js">Javascript  <img src="img/js.png" height="22" width="22"></li>
+            <li id="EJS">EJS  <img src="img/ejs.png" height="22" width="22"></li>
+            <li id="React">React  <img src="img/react.png" height="22" width="22"></li>
+            <li id="XML">XML  <img src="img/xml.png" height="22" width="22"></li>
+          </ul>
+          <li id="frame">Frameworks</li>
+          <ul>
+            <li id="express">Express  <img src="img/ex.png" height="22" width="22"></li>
+            <li id="Django">Django  <img src="img/django.png" height="22" width="66"></li>
+            <li id="PyTorch">PyTorch  <img src="img/pytorch.png" height="22" width="22"></li>
+          </ul>
+          <li id="lib">Bibliotecas</li>
+          <ul>
+            <li id="scikit-learn">Scikit-learn  <img src="img/scikitlearn.png" height="22" width="22"></li>
+            <li id="numpy">Numpy  <img src="img/numpy.png" height="22" width="22"></li>
+            <li id="pandas">Pandas  <img src="img/pandas.png" height="22" width="22"></li>
+            <li id="huggingface">Huggingface  <img src="img/huggingface.png" height="22" width="22"></li>
+            <li id="p5js">P5.js  <img src="img/p5js.png" height="22" width="22"></li>
+            <li id="sequelize">Sequelize  <img src="img/sequelize.png" height="22" width="22"></li>
+            <li id="OpenCV">OpenCV  <img src="img/opencv.png" height="22" width="22"></li>
+
+          </ul>
+          <li id="infra">Infraestrutura</li>
+          <ul>
+            <li id="AWS">AWS  <img src="img/aws.png" height="22" width="22"></li>
+            <li id="Git">Git  <img src="img/git.png" height="22" width="22"></li>
+            <li id="Docker">Docker  <img src="img/docker.png" height="22" width="22"></li>
+            <li id="VM">VM  <img src="img/vm.png" height="22" width="22"></li>
+          </ul>
+          <li id="other">Outras tecnologias</li>
+          <ul>
+            <li id="mendix">Mendix  <img src="img/mendix.png" height="22" width="22"></li>
+            <li id="foundry">Foundry  <img src="img/foundry.png" height="22" width="44"></li>
+            <li id="omnet">Omnet++  <img src="img/omnet.png" height="22" width="22"></li>
+            <li id="sumo">Sumo  <img src="img/sumo.png" height="22" width="44"></li>
+            <li id="veins">Veins  <img src="img/veins.png" height="22" width="66"></li>
+            <li id="jup">Jupyter Notebook <img src="img/jup.png" height="22" width="22"></li>
+            <li id="android">Android Studio  <img src="img/and.png" height="22" width="22"></li>
+          </ul>
+          </ul>
+        </ul>
       </section>
       <section id="idiomas" class="content-section">
         <h1 id="language">Idiomas</h1>

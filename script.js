@@ -49,6 +49,10 @@ function mudarConteudo(idioma) {
       PLN_2_tecs: "Tecnologias mais utlizadas",
       Futfacil: "CRUD feito em next.js para cadastro de quadras de futebol",
       Futfacil_tecs: "Tecnologias mais utlizadas",
+      data: "Banco de dados",
+      lib: "Bibliotecas",
+      infra: "Infraestrutura",
+      other: "Outras tecnologias",
       language: "Idiomas",
       pt: "Português fluente",
       en: "Inglês fluente",
@@ -98,6 +102,10 @@ function mudarConteudo(idioma) {
       PLN_2_tecs: "Most used technologies",
       Futfacil: "CRUD made in next.js to register football courts",
       Futfacil_tecs: "Most used technologies",
+      data: "Database",
+      lib: "Libraries",
+      infra: "Infrastructure",
+      other: "Other technologies",
       language: "Languages",
       pt: "Fluent Portuguese",
       en: "Fluent English",
@@ -147,6 +155,10 @@ function mudarConteudo(idioma) {
       PLN_2_tecs: "Tecnologías más utilizadas",
       Futfacil: "CRUD hecho en next.js para registro de canchas de fútbol",
       Futfacil_tecs: "Tecnologías más utilizadas",
+      data: "Base de datos",
+      lib: "Bibliotecas",
+      infra: "Infraestructura",
+      other: "Otras tecnologías",
       language: "Idiomas",
       pt: "Portugués fluido",
       en: "Inglés fluido",
@@ -196,6 +208,10 @@ function mudarConteudo(idioma) {
       PLN_2_tecs: "Technologies les plus utilisées",
       Futfacil: "CRUD fait en next.js pour l'enregistrement des terrains de football",
       Futfacil_tecs: "Technologies les plus utilisées",
+      data: "Base de données",
+      lib: "Bibliothèques",
+      infra: "Infrastructure",
+      other: "Autres technologies",
       language: "Langues",
       pt: "Portugais courant",
       en: "Anglais courant",
@@ -253,6 +269,10 @@ function mudarConteudo(idioma) {
   document.getElementById("PLN_2_tecs").innerHTML = traducoesSelecionadas.PLN_2_tecs;
   document.getElementById("Futfacil").innerHTML = traducoesSelecionadas.Futfacil;
   document.getElementById("Futfacil_tecs").innerHTML = traducoesSelecionadas.Futfacil_tecs;
+  document.getElementById("data").innerHTML = traducoesSelecionadas.data;
+  document.getElementById("lib").innerHTML = traducoesSelecionadas.lib;
+  document.getElementById("infra").innerHTML = traducoesSelecionadas.infra;
+  document.getElementById("other").innerHTML = traducoesSelecionadas.other;
   document.getElementById("language").innerHTML = traducoesSelecionadas.language;
   document.getElementById("pot").innerHTML = traducoesSelecionadas.pt;
   document.getElementById("eng").innerHTML = traducoesSelecionadas.en;
@@ -264,10 +284,9 @@ function mudarConteudo(idioma) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  mudarConteudo("pt"); // Define o idioma padrão como português
-  showSection("sobre"); // Mostra a seção "Sobre Mim" por padrão
+  mudarConteudo("pt");
+  showSection("sobre");
 
-  // Garante que a sidebar comece colapsada
   const sidebar = document.querySelector(".sidebar");
   if (!sidebar.classList.contains("collapsed")) {
     sidebar.classList.add("collapsed");
@@ -278,3 +297,45 @@ function toggleSidebar() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.classList.toggle("collapsed");
 }
+
+function toggleTheme() {
+  const body = document.body;
+  const isDarkTheme = body.classList.toggle('dark-theme'); // Alterna a classe 'dark-theme'
+
+  // Salva a preferência do tema no localStorage
+  localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+}
+
+// Carrega o tema salvo no localStorage ao carregar a página
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-theme');
+    document.getElementById('toggle-button').checked = true; // Marca o toggle switch
+  }
+});
+
+function toggleTheme() {
+  const body = document.body;
+  const isDarkTheme = body.classList.toggle('dark-theme'); // Alterna a classe 'dark-theme'
+
+  // Atualiza o texto dinamicamente
+  const toggleText = document.getElementById('toggle-text');
+  toggleText.textContent = isDarkTheme ? 'Tema Escuro' : 'Tema Claro';
+
+  // Salva a preferência do tema no localStorage
+  localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+}
+
+// Carrega o tema salvo no localStorage ao carregar a página
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  const toggleText = document.getElementById('toggle-text');
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-theme');
+    document.getElementById('toggle-button').checked = true; // Marca o toggle switch
+    toggleText.textContent = 'Tema Escuro';
+  } else {
+    toggleText.textContent = 'Tema Claro';
+  }
+});
