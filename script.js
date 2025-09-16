@@ -49,6 +49,7 @@ function mudarConteudo(idioma) {
       PLN_2_tecs: "Tecnologias mais utlizadas",
       Futfacil: "CRUD feito em next.js para cadastro de quadras de futebol",
       Futfacil_tecs: "Tecnologias mais utlizadas",
+      tecnologie: "Tecnologias",
       data: "Banco de dados",
       lib: "Bibliotecas",
       infra: "Infraestrutura",
@@ -102,6 +103,7 @@ function mudarConteudo(idioma) {
       PLN_2_tecs: "Most used technologies",
       Futfacil: "CRUD made in next.js to register football courts",
       Futfacil_tecs: "Most used technologies",
+      tecnologie: "Technologies",
       data: "Database",
       lib: "Libraries",
       infra: "Infrastructure",
@@ -155,6 +157,7 @@ function mudarConteudo(idioma) {
       PLN_2_tecs: "Tecnologías más utilizadas",
       Futfacil: "CRUD hecho en next.js para registro de canchas de fútbol",
       Futfacil_tecs: "Tecnologías más utilizadas",
+      tecnologie: "Tecnologías",
       data: "Base de datos",
       lib: "Bibliotecas",
       infra: "Infraestructura",
@@ -208,6 +211,7 @@ function mudarConteudo(idioma) {
       PLN_2_tecs: "Technologies les plus utilisées",
       Futfacil: "CRUD fait en next.js pour l'enregistrement des terrains de football",
       Futfacil_tecs: "Technologies les plus utilisées",
+      tecnologie: "Technologies",
       data: "Base de données",
       lib: "Bibliothèques",
       infra: "Infrastructure",
@@ -269,6 +273,7 @@ function mudarConteudo(idioma) {
   document.getElementById("PLN_2_tecs").innerHTML = traducoesSelecionadas.PLN_2_tecs;
   document.getElementById("Futfacil").innerHTML = traducoesSelecionadas.Futfacil;
   document.getElementById("Futfacil_tecs").innerHTML = traducoesSelecionadas.Futfacil_tecs;
+  document.getElementById("tecnologie").innerHTML = traducoesSelecionadas.tecnologie;
   document.getElementById("data").innerHTML = traducoesSelecionadas.data;
   document.getElementById("lib").innerHTML = traducoesSelecionadas.lib;
   document.getElementById("infra").innerHTML = traducoesSelecionadas.infra;
