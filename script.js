@@ -14,6 +14,7 @@ function mudarConteudo(idioma) {
       expe_me: "Experiência",
       portifolio_me: "Projetos",
       languages_me: "Idiomas",
+      tecnologies_me: "Tecnologias",
       cert_me: "Certificados Disponíveis",
       about: "Sobre Mim",
       about_text: "Graduado em ciências da computação pela UFS(Universidade Federal de Sergipe) com experiência como aluno de PIBIC, suporte de TI, desenvolvedor web/mobile e atualmente como desenvolvedor e analista de dados. Tenho experiência em desenvolvimento de aplicações web e mobile, além de aplicações com foco em análise de dados e machine learning. Sou apaixonado por tecnologia e sempre busco aprender novas habilidades para aprimorar meu trabalho. Estou sempre aberto a novos desafios e oportunidades de crescimento profissional.",
@@ -68,6 +69,7 @@ function mudarConteudo(idioma) {
       expe_me: "Experience",
       portifolio_me: "Projects",
       languages_me: "Languages",
+      tecnologies_me: "Technologies",
       cert_me: "Available Certificates",
       about: "About Me",
       about_text: "Graduated in computer science from UFS (Federal University of Sergipe) with experience as a PIBIC student, IT support, web/mobile developer and currently as a developer and data analyst. I have experience in developing web and mobile applications, as well as applications focused on data analysis and machine learning. I am passionate about technology and always seek to learn new skills to improve my work. I am always open to new challenges and opportunities for professional growth.",
@@ -121,6 +123,7 @@ function mudarConteudo(idioma) {
       about_me: "Sobre Mí",
       expe_me: "Experiencia",
       portifolio_me: "Proyectos",
+      tecnologies_me: "Tecnologías",
       languages_me: "Idiomas",
       cert_me: "Certificados Disponibles",
       about: "Sobre Mí",
@@ -175,6 +178,7 @@ function mudarConteudo(idioma) {
       about_me: "À propos de moi",
       expe_me: "Expérience",
       portifolio_me: "Projets",
+      tecnologies_me: "Technologies",
       languages_me: "Langues",
       cert_me: "Certificats disponibles",
       about: "À propos de moi",
@@ -238,6 +242,7 @@ function mudarConteudo(idioma) {
   document.getElementById("expe_me").innerHTML = traducoesSelecionadas.expe_me;
   document.getElementById("portifolio_me").innerHTML = traducoesSelecionadas.portifolio_me;
   document.getElementById("languages_me").innerHTML = traducoesSelecionadas.languages_me;
+  document.getElementById("tecnologies_me").innerHTML = traducoesSelecionadas.tecnologies_me;
   document.getElementById("cert_me").innerHTML = traducoesSelecionadas.cert_me;
   document.getElementById("about").innerHTML = traducoesSelecionadas.about;
   document.getElementById("about_text").innerHTML = traducoesSelecionadas.about_text;

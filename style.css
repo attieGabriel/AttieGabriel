@@ -231,6 +231,7 @@ footer .icon-button {
   justify-content: center;
   padding: 0;
   background-color: transparent;
+  border: none;
 }
 
 footer .icon-button img {
