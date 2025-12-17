@@ -81,6 +81,8 @@ body.dark-theme .sidebar.collapsed,.sidebar.collapsed {
   padding: 0.5rem;
   height: 100%;
   overflow-y: auto;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .sidebar a, .sidebar button {
