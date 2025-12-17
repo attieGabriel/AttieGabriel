@@ -108,7 +108,15 @@ body.dark-theme .sidebar a, body.dark-theme .sidebar button {
 }
 
 .sidebar.collapsed a, .sidebar.collapsed button {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 5px;
+  margin: 3px 0;
   text-align: center;
+  white-space: nowrap; /* evita quebra de linha */
+  overflow: hidden; /* esconde o excesso */
+  text-overflow: ellipsis; /* mostra '...' quando cortar */
 }
 
 #toggle-sidebar {
