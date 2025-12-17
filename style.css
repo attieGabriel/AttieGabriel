@@ -60,6 +60,7 @@ body.dark-theme header {
   top: 7rem;
   transition: width 0.3s ease;
   height: 100%;
+  text-align: center;
 }
 
 body.dark-theme .sidebar {
@@ -74,6 +75,7 @@ body.dark-theme .sidebar {
   top: 7rem;
   transition: width 0.3s ease;
   height: 100%;
+  text-align: center;
 }
 
 body.dark-theme .sidebar.collapsed,.sidebar.collapsed {
@@ -172,6 +174,17 @@ main {
   height: auto;
 }
 
+/* Quando a sidebar estiver colapsada, mostra apenas a bandeira ativa */
+.sidebar.collapsed .translate-buttons button:not(.active) {
+  display: none;
+}
+
+.sidebar .translate-buttons button.active {
+  /* destaque sutil para a bandeira ativa */
+  outline: 2px solid rgba(150,112,0,0.9);
+  border-radius: 4px;
+}
+
 .content-section {
   display: block;
   scroll-margin-top: 8rem;
@@ -255,6 +268,8 @@ footer .icon-button img {
   display: inline-block;
   width: 60px;
   height: 30px;
+  /* centraliza horizontalmente quando usado em containers block/flex */
+  margin: 8px auto;
 }
 
 .toggle-switch input {
@@ -278,6 +293,17 @@ footer .icon-button img {
   justify-content: space-between; /* Alinha os ícones nas extremidades */
   padding: 0 5px;
   box-sizing: border-box;
+}
+
+/* garante centralização dentro da sidebar, inclusive quando colapsada */
+.sidebar .toggle-switch {
+  align-self: center;
+  margin: 8px 0;
+}
+
+.sidebar.collapsed .toggle-switch {
+  align-self: center;
+  margin: 6px 0;
 }
 
 .slider:before {

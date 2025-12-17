@@ -9,7 +9,7 @@ function showSection(sectionId) {
 function mudarConteudo(idioma) {
   const traducoes = {
     pt: {
-      welcome: "Bem-vindo ao Meu Site",
+      welcome: "Bem-vindo ao meu site",
       about_me: "Sobre Mim",
       expe_me: "Experiência",
       portifolio_me: "Projetos",
@@ -53,6 +53,7 @@ function mudarConteudo(idioma) {
       tecnologie: "Tecnologias",
       data: "Dados",
       data_base: "Banco de dados",
+      search: "Pesquisa",
       lib: "Bibliotecas",
       infra: "Infraestrutura",
       other: "Outras tecnologias",
@@ -65,7 +66,7 @@ function mudarConteudo(idioma) {
       certificados_text: "Aqui estão todos os meus certificados disponíveis para download",
     },
     en: {
-      welcome: "Welcome to My Site",
+      welcome: "Welcome to my site",
       about_me: "About Me",
       expe_me: "Experience",
       portifolio_me: "Projects",
@@ -109,6 +110,7 @@ function mudarConteudo(idioma) {
       tecnologie: "Technologies",
       data: "Data",
       data_base: "Database",
+      search: "Search",
       lib: "Libraries",
       infra: "Infrastructure",
       other: "Other technologies",
@@ -121,7 +123,7 @@ function mudarConteudo(idioma) {
       certificados_text: "Here are all my certificates available for download",
     },
     es: {
-      welcome: "Bienvenido a Mi Sitio",
+      welcome: "Bienvenido a mi sitio",
       about_me: "Sobre Mí",
       expe_me: "Experiencia",
       portifolio_me: "Proyectos",
@@ -165,6 +167,7 @@ function mudarConteudo(idioma) {
       tecnologie: "Tecnologías",
       data: "Datos",
       data_base: "Base de datos",
+      search: "Búsqueda",
       lib: "Bibliotecas",
       infra: "Infraestructura",
       other: "Otras tecnologías",
@@ -221,6 +224,7 @@ function mudarConteudo(idioma) {
       tecnologie: "Technologies",
       data: "Données",
       data_base: "Base de données",
+      search: "Recherche",
       lib: "Bibliothèques",
       infra: "Infrastructure",
       other: "Autres technologies",
@@ -284,6 +288,8 @@ function mudarConteudo(idioma) {
   document.getElementById("Futfacil_tecs").innerHTML = traducoesSelecionadas.Futfacil_tecs;
   document.getElementById("tecnologie").innerHTML = traducoesSelecionadas.tecnologie;
   document.getElementById("data").innerHTML = traducoesSelecionadas.data;
+  document.getElementById("data_base").innerHTML = traducoesSelecionadas.data_base;
+  document.getElementById("search").innerHTML = traducoesSelecionadas.search;
   document.getElementById("lib").innerHTML = traducoesSelecionadas.lib;
   document.getElementById("infra").innerHTML = traducoesSelecionadas.infra;
   document.getElementById("other").innerHTML = traducoesSelecionadas.other;
@@ -294,6 +300,12 @@ function mudarConteudo(idioma) {
   document.getElementById("fra").innerHTML = traducoesSelecionadas.fr;
   document.getElementById("certificates").innerHTML = traducoesSelecionadas.certificates;
   document.getElementById("certificados_text").innerHTML = traducoesSelecionadas.certificados_text;
+
+  // Atualiza qual botão de bandeira está ativo (para mostrar apenas a ativa quando a sidebar colapsar)
+  const langMap = { pt: 'br', en: 'us', es: 'es', fr: 'fr' };
+  document.querySelectorAll('.translate-buttons button').forEach(btn => btn.classList.remove('active'));
+  const activeBtn = document.getElementById(langMap[idioma]);
+  if (activeBtn) activeBtn.classList.add('active');
 
 }
 
@@ -352,4 +364,13 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     toggleText.textContent = 'Tema Claro';
   }
+});
+
+// acessibilidade: adiciona tooltip com nome do idioma às bandeiras
+document.addEventListener("DOMContentLoaded", function () {
+  const titles = { br: 'Português', us: 'English', es: 'Español', fr: 'Français' };
+  Object.entries(titles).forEach(([id, t]) => {
+    const btn = document.getElementById(id);
+    if (btn) btn.title = t;
+  });
 });
