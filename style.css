@@ -179,6 +179,18 @@ footer {
   position: relative;
 }
 
+footer .sidebar-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+footer .icon-button {
+  margin: 0 8px;
+}
+
 body.dark-theme footer {
   background-color: #ffc107;
   color:#131313;
@@ -208,16 +220,28 @@ body.dark-theme footer {
   object-fit: cover;
 }
 
-.sidebar-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #certificados {
   padding-bottom: 1rem;
 }
+footer .icon-button {
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
 
+footer .icon-button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .toggle-switch {
   position: relative;
   display: inline-block;
