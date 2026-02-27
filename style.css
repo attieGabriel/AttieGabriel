@@ -190,6 +190,25 @@ main {
   scroll-margin-top: 8rem;
 }
 
+details summary {
+  cursor: pointer;
+  list-style: none;            /* remove a bolinha */
+}
+
+details summary::-webkit-details-marker {
+  display: none;               /* opcional: oculta o marcador padrão */
+}
+
+details summary::before {
+  content: "► ";
+  display: inline-block;
+  transition: transform .2s;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
 footer {
   width: 100%;
   background-color: #967000;
